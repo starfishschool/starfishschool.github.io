@@ -9,7 +9,6 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
-
     background-color: #F29422;
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
