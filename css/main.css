@@ -36,7 +36,7 @@ body {
     overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .header {
@@ -61,7 +61,7 @@ body {
 
 .header ul li {
     margin: 0 1em;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .header ul li a {
@@ -117,13 +117,18 @@ section:nth-child(5) {
     background-color: #D92929;
 }
 
-section:nth-child(7) {
+section:nth-child(6) {
+    background-color: #A62F24;
+}
+
+section:nth-child(8) {
     background-color: #000000;
 }
 
+
 #home #mainbox {
     position: absolute;
-    top: 40vh;
+    top: 30vh;
     left: 50vw;
 }
 
@@ -131,6 +136,7 @@ section:nth-child(7) {
     font-family: Open Sans Condensed;
     font-weight: bold;
     font-size: 48pt;
+    line-height: 48pt;
     color: #FFFFFF;
     position: relative;
     padding-bottom: 0;
@@ -164,20 +170,132 @@ section .contentbox {
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-section .contentbox h2.boxtitle {
+
+section .contentbox div {
+    font-size: 18pt;
+    width: 60%;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+}
+
+section .contentbox div.boxtitle {
     text-transform: uppercase;
     text-align: center;
     font-family: Open Sans Condensed;
     font-weight: bold;
     font-size: 36pt;
+    width: 100%;
 }
 
-section .contentbox p {
+section#schedule .contentbox ul.sched {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+section#schedule .contentbox ul.sched li.schedday {
+    margin: 0.5em 0.5em;
+    padding: 0.5em;
+    text-align: center;
     font-size: 18pt;
-    width: 60%;
-    min-width: 600px;
+    max-width: 300px;
+    border-style: solid;
+}
+
+section#schedule .contentbox ul.sched li.schedday .syllabus {
+    font-size: 12pt;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left; 
+    list-style-type: square;
+}
+
+.organizers ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.organizers ul li {
+    margin: 0 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.organizers ul li a {
     position: relative;
-    margin: auto;
+    text-decoration: none;
+    color: #F29422;
+}
+
+.organizers ul li a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    transition: all 0.2s linear;
+}
+
+.organizers ul li a:hover::after {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.organizers div.profilepic {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: #A62F24;
+    border-width: 4px;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.organizers div.profilepic#mubdi {
+    background-image: url(../img/profilepic_mubdi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.organizers div.profilepic#gwen {
+    background-image: url(../img/profilepic_gwen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.organizers div.profilepic#renee {
+    background-image: url(../img/profilepic_renee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img.logo {
+    width: 450px;
+    height: auto;
 }
