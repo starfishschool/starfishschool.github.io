@@ -46,7 +46,7 @@ body {
     display: flex;
     width: 100%;
     min-height: 59px;
-    background-image: linear-gradient(180deg, #1d1d1d, rgba(29, 30, 34, 0.1), transparent);
+    background-image: linear-gradient(180deg, #424242, rgba(29, 30, 34, 0.1), transparent);
     mix-blend-mode: luminosity;
 }
 
@@ -101,7 +101,7 @@ section {
 section:nth-child(2) {
     background-size: cover;
     background-image: url(../img/coverbg.png);
-    background-position: center;
+    background-position: center top;
 }
 
 section:nth-child(3) {
@@ -165,10 +165,17 @@ section:nth-child(8) {
     font-weight: 300;
 }
 
+#home #mainbox #title,
+#home #mainbox #subtitle,
+#home #mainbox #affil {
+    padding-right: 2vw;
+}
+
 section .contentbox {
     padding-top: 59px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 5vh;
     width: 100%;
     display: flex;
     flex-direction: column;
