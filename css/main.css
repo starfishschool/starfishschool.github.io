@@ -319,3 +319,25 @@ img.logo {
     width: 450px;
     height: auto;
 }
+
+.contentbox a {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contentbox a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    transition: all 0.2s linear;
+}
+
+.contentbox a:hover::after {
+    width: 100%;
+    background-color: #f4f4f4;
+}
