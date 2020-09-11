@@ -210,7 +210,7 @@ section#details div.contentbox {
     padding-bottom: 50px;
 }
 
-section#schedule .contentbox ul.sched {
+.contentbox ul.sched {
     margin: 0;
     margin-top: 20px;
     padding: 0;
@@ -221,7 +221,7 @@ section#schedule .contentbox ul.sched {
     justify-content: center;
 }
 
-section#schedule .contentbox ul.sched li.schedday {
+.contentbox ul.sched li.schedday {
     margin: 0.5em 0.5em;
     padding: 0.5em;
     text-align: center;
@@ -230,7 +230,7 @@ section#schedule .contentbox ul.sched li.schedday {
     border-style: solid;
 }
 
-section#schedule .contentbox ul.sched li.schedday .syllabus {
+.contentbox ul.sched li.schedday .syllabus {
     font-size: 12pt;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -338,6 +338,76 @@ img.logo {
 }
 
 .contentbox a:hover::after {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+section#resources .contentbox ul.resources {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+section#resources .contentbox ul.resources li.resourcebox {
+    margin: 0.5em 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 18pt;
+    max-width: 300px;
+    border-style: solid;
+}
+
+section#resources .contentbox ul.resources li.resourcebox .resourcelist {
+    font-size: 12pt;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left; 
+    list-style-type: square;
+}
+
+section#resources .contentbox ul.resources ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+section#resources .contentbox ul.resources ul li a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    transition: all 0.2s linear;
+}
+
+section#resources .contentbox ul.resources ul li a:hover::after {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.contentbox ul.sched ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.contentbox ul.sched ul li a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    transition: all 0.2s linear;
+}
+
+.contentbox ul.sched ul li a:hover::after {
     width: 100%;
     background-color: #f4f4f4;
 }
