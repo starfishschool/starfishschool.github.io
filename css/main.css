@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300;400&display=swap');
-*, ::before, ::after {
+*,
+ ::before,
+ ::after {
     box-sizing: border-box;
 }
 
@@ -125,7 +127,6 @@ section:nth-child(8) {
     background-color: #000000;
 }
 
-
 #home #mainbox {
     position: absolute;
     top: 30vh;
@@ -142,6 +143,7 @@ section:nth-child(8) {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 
 /* #home #subtitle::before {
     position: absolute;
@@ -183,7 +185,6 @@ section .contentbox {
     justify-content: flex-start;
     align-content: center;
 }
-
 
 section .contentbox div {
     font-size: 18pt;
@@ -234,7 +235,7 @@ section#details div.contentbox {
     font-size: 12pt;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: left; 
+    text-align: left;
     list-style-type: square;
 }
 
@@ -311,13 +312,13 @@ section#details div.contentbox {
 
 div.supporters {
     padding-top: 25px;
-
 }
 
 img.logo {
-    margin-top: 10px;
-    width: 450px;
-    height: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: auto;
+    height: 100px;
 }
 
 .contentbox a {
@@ -366,7 +367,7 @@ section#resources .contentbox ul.resources li.resourcebox .resourcelist {
     font-size: 12pt;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: left; 
+    text-align: left;
     list-style-type: square;
 }
 
