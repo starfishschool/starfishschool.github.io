@@ -310,6 +310,20 @@ section#details div.contentbox {
     background-size: cover;
 }
 
+.organizers div.profilepic#josh {
+    background-image: url(../img/profilepic_josh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.organizers div.profilepic#ting {
+    background-image: url(../img/profilepic_ting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div.supporters {
     padding-top: 25px;
 }
